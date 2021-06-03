@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="age <= 67.5\ngini = 0.087\nsamples = 4088\nvalue = [3901, 187]\nclass = s", fillcolor="#e68742"] ;
+1 [label="age <= 47.5\ngini = 0.043\nsamples = 3396\nvalue = [3322, 74]\nclass = s", fillcolor="#e6843d"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="bmi <= 56.3\ngini = 0.01\nsamples = 2211\nvalue = [2200, 11]\nclass = s", fillcolor="#e5823a"] ;
+1 -> 2 ;
+3 [label="gini = 0.009\nsamples = 2202\nvalue = [2192, 10]\nclass = s", fillcolor="#e5823a"] ;
+2 -> 3 ;
+4 [label="gini = 0.198\nsamples = 9\nvalue = [8, 1]\nclass = s", fillcolor="#e89152"] ;
+2 -> 4 ;
+5 [label="avg_glucose_level <= 110.47\ngini = 0.101\nsamples = 1185\nvalue = [1122, 63]\nclass = s", fillcolor="#e68844"] ;
+1 -> 5 ;
+6 [label="gini = 0.062\nsamples = 783\nvalue = [758, 25]\nclass = s", fillcolor="#e68540"] ;
+5 -> 6 ;
+7 [label="gini = 0.171\nsamples = 402\nvalue = [364, 38]\nclass = s", fillcolor="#e88e4e"] ;
+5 -> 7 ;
+8 [label="age <= 75.5\ngini = 0.273\nsamples = 692\nvalue = [579, 113]\nclass = s", fillcolor="#ea9a60"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="avg_glucose_level <= 263.17\ngini = 0.223\nsamples = 313\nvalue = [273, 40]\nclass = s", fillcolor="#e99356"] ;
+8 -> 9 ;
+10 [label="gini = 0.219\nsamples = 312\nvalue = [273, 39]\nclass = s", fillcolor="#e99355"] ;
+9 -> 10 ;
+11 [label="gini = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = t", fillcolor="#399de5"] ;
+9 -> 11 ;
+12 [label="avg_glucose_level <= 103.64\ngini = 0.311\nsamples = 379\nvalue = [306, 73]\nclass = s", fillcolor="#eb9f68"] ;
+8 -> 12 ;
+13 [label="gini = 0.261\nsamples = 214\nvalue = [181, 33]\nclass = s", fillcolor="#ea985d"] ;
+12 -> 13 ;
+14 [label="gini = 0.367\nsamples = 165\nvalue = [125, 40]\nclass = s", fillcolor="#eda978"] ;
+12 -> 14 ;
+}
